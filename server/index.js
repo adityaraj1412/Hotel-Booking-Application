@@ -16,6 +16,6 @@ app.use("/api/rooms", roomsRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/bookings", bookingRoute);
 
-const port = process.env.PORT; // Use the PORT from .env only
+const port = 3000; // Use the PORT from .env only
 app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Node app listening on ${port} port!`));
